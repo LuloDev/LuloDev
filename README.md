@@ -16,5 +16,5 @@ I'm open to collaboration on exciting projects that align with my interests. If 
 
 ## 📫 How to Reach Me
 
-You can connect with me via [LinkedIn](https://www.linkedin.com/in/juandiegost) or [Twitter](https://twitter.com/SeniorByteDev). I'm always up for a chat about technology, coding, or anything interesting!
+You can connect with me via [Twitter](https://twitter.com/lulo_dev). I'm always up for a chat about technology, coding, or anything interesting!
 
