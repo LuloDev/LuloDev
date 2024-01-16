@@ -1,0 +1,50 @@
+---
+---
+<header>
+  <nav class="border-gray-200 bg-[#27172f]">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://yt3.googleusercontent.com/oTKmBegbloWcXzv-SPw99B08aLbZgF8XgvWMMQEIBhHFaqZL5hocCfaor3kEGLzAF5dh4lNP=s176-c-k-c0x00ffffff-no-rj" class="h-8" alt="LuloDev Logo" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">LuloDev</span>
+      </a>
+      <button id="menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="3 5 18 8">
+            <path d="M 4 5 C 3.4477 5 3 5.4477 3 6 C 3 6.5523 3.4477 7 4 7 H 20 C 20.5523 7 21 6.5523 21 6 C 21 5.4477 20.5523 5 20 5 H 4 z M 7 12 C 7 11.4477 7.4477 11 8 11 H 20 C 20.5523 11 21 11.4477 21 12 C 21 12.5523 20.5523 13 20 13 H 8 C 7.4477 13 7 12.5523 7 12" fill="#fff"/>
+          </svg>
+      </button>
+      <div class="d-hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="text-4xl md:text-base font-medium flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 space-y-8 md:space-y-0 rtl:space-x-reverse md:mt-0 border-0 bg-[#27172f]">
+          <li>
+            <a href="#" class="block py-2 px-3 md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent bg-[#27172f]"><span class="text-[#f37101]">#</span>About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent bg-[#27172f]"><span class="text-[#f37101]">#</span>About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3  md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent bg-[#27172f]"><span class="text-[#f37101]">#</span>About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3  md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent bg-[#27172f]"><span class="text-[#f37101]">#</span>About</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent bg-[#27172f]"><span class="text-[#f37101]">#</span>About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn');
+  const navbar = document.querySelector('#navbar-default');
+  if(!menuBtn || !navbar) {
+    throw new Error('Menu button or navbar not found');
+  }
+  menuBtn.addEventListener('click', () => {
+    navbar.classList.toggle('hidden');
+  });
+</script>
+
