@@ -1,6 +1,6 @@
-# 👋 Hi, I’m @SeniorByteDev
+# 👋 Hi, I’m @LuloDev
 
-Welcome to my GitHub profile! I'm a passionate software developer with a focus on development in JavaScript, TypeScript and Python.
+Welcome to my GitHub profile! I'm a passionate software developer with a focus on development in HomeLab, JavaScript, TypeScript and Python.
 
 ## 👀 What I'm Interested In
 
