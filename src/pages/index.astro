@@ -1,17 +1,96 @@
 ---
-import Header from '../components/header.astro'
-
+import Header from '../components/header.astro';
+import Dots from '../components/dots.astro';
+import Github from '../components/github-link.astro';
+import Twitter from '../components/twitter-link.astro';
+import '@fontsource/fira-sans';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-  <body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>LuloDev</title>
+    <meta
+      name="description"
+      content="LuloDev is a simple Developer and Indie Hacker"
+    />
+    <style is:global>
+      body {
+        font-family: 'Fira Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#27172f]">
     <Header />
-	</body>
+    <main class="border-gray-200 bg-[#27172f] text-white">
+      <section
+        id="home"
+        class="p-10 text-right lg:px-30 h-screen flex justify-center flex-col lg:p-10 xl:p-20"
+      >
+        <div
+          class="absolute left-0 transform translate-x-16 translate-y-[-400px] lg:translate-x-1/2 lg:translate-y-[-100px]"
+        >
+          <Dots class="text-white w-40" />
+        </div>
+        <h1 class="text-5xl lg:text-8xl md:text-7xl">
+          LuloDev is a simple <br /><span class="text-[#f37101]">Developer</span
+          >
+          <br />
+          and <span class="text-[#f37101]">Indie Hacker</span>
+        </h1>
+
+        <h2
+          class="mt-10 text-gray-400 font-light lg:text-5xl md:text-4xl text-3xl"
+        >
+          I develop cool software solutions and support the open-source
+          community
+        </h2>
+        <div class="flex justify-end gap-10 mt-10">
+          <Github class="text-white text-6xl" />
+          <Twitter class="text-white text-6xl" />
+        </div>
+      </section>
+      <section id="about-me" class="my-10 pl-10 pr-10 md:pr-0 h-screen pt-40">
+        <h3 class="text-5xl flex items-center mb-10">
+          <span class="text-[#f37101] mr-2">#</span>about-me
+          <div
+            class="hidden md:block border-t border-[#f37101] border-[2px] w-5/12 self-center ml-20"
+          >
+          </div>
+        </h3>
+        <div class="flex relative overflow-hidden">
+          <p class="md:w-1/2 pb-20 text-xl">
+            I'm a restless soul, always on a quest for the next big adventure in
+            the world of development. Delving into the intricacies of
+            JavaScript, exploring the cosmic wonders of Python, and embracing
+            the power of Linux, Neovim, and building a home lab. 🚀 I find joy
+            in self-hosting applications and contributing to the open-source
+            community.
+
+            <br />
+            <br />
+
+            I`m a big fan of the Svelte and Astro, and I love to build and
+            deploy applications using the latest and greatest technologies. I'm
+            also a big fan of the Indie Hacker movement and I'm always looking
+            for new ways to build and grow profitable side projects.
+          </p>
+          <div class="md:w-1/2 md:flex md:justify-center hidden md:sticky">
+            <Dots class="text-white w-40" />
+          </div>
+          <div
+            class="absolute right-0 transform lg:translate-x-1/2 md:translate-y-2/4 translate-x-40"
+          >
+            <Dots class="text-white w-40" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
