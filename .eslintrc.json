@@ -1,6 +1,0 @@
-{
-    "extends": ["eslint:recommended", "prettier"],
-    "rules": {
-        "prettier/prettier": "error"
-    }
-  }
